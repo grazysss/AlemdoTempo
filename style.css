@@ -1,0 +1,180 @@
+/* body {
+    background-color: black;
+    scrollbar-width: hidden;
+
+    margin: 0px;
+}
+
+#container {
+    display: flex;
+    /* border: 1px solid red; */
+    /* width: 380px;
+    height: 620px;
+
+
+    margin: 0px 430px;
+} */
+
+/* .profile {
+    width: 80px;
+    margin: 58px 150px 0px 150px;
+}
+
+.name {
+    margin: 6px;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+}
+
+.insta {
+    color: #FFFFFF;
+    margin: 6px 133px;
+
+    font-size: 12px;
+}
+
+ul {
+    margin: 24px 70px 24px 70px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    
+    height: 40px;
+}
+
+ul a {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 12px 45px;
+} */
+/* 
+.sl1 {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    position: absolute;
+    padding: 0px 32px;
+    margin: 0px 64px;
+}
+
+.sl2 {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    position: absolute;
+    padding: 0px 64px;
+    margin: 0px 82px;
+}
+
+.sl3 {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    position: absolute;
+    padding: 0px 96px;
+    margin: 0px 100px;
+}
+
+.sl4 {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    position: absolute;
+    padding: 0px 128px;
+    margin: 0px 120px;
+} */
+
+body {
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    height: 620px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.profile {
+    width: 80px;
+    margin: 58px 46px 0;
+}
+
+.name {
+    margin: 6px;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+}
+
+.insta {
+    color: #ffffff;
+    margin: 6px auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+ul {
+    margin: 24px auto;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+ul a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.sl1, .sl2, .sl3, .sl4 {
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    padding: 0;
+    justify-content: space-around;
+    flex-direction: row;
+     /* Ajuste o valor conforme necessário */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 480px) {
+    .profile {
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .insta {
+        font-size: 11px;
+        margin: 6px auto;
+    }
+
+    ul {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    ul a {
+        margin: 0;
+    }
+}
