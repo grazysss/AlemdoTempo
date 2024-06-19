@@ -1,100 +1,25 @@
-/* body {
-    background-color: black;
-    scrollbar-width: hidden;
-
-    margin: 0px;
-}
-
-#container {
-    display: flex;
-    /* border: 1px solid red; */
-    /* width: 380px;
-    height: 620px;
-
-
-    margin: 0px 430px;
-} */
-
-/* .profile {
-    width: 80px;
-    margin: 58px 150px 0px 150px;
-}
-
-.name {
-    margin: 6px;
-    color: #FFFFFF;
-    font-size: 15px;
-    text-align: center;
-}
-
-.insta {
-    color: #FFFFFF;
-    margin: 6px 133px;
-
-    font-size: 12px;
-}
-
-ul {
-    margin: 24px 70px 24px 70px;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 8px;
-    display: flex;
-    
-    height: 40px;
-}
-
-ul a {
-    display: flex;
-    color: #ffffff;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    margin: 12px 45px;
-} */
-/* 
-.sl1 {
-    display: flex;
-    justify-content: center;
-    width: 28px;
-    position: absolute;
-    padding: 0px 32px;
-    margin: 0px 64px;
-}
-
-.sl2 {
-    display: flex;
-    justify-content: center;
-    width: 28px;
-    position: absolute;
-    padding: 0px 64px;
-    margin: 0px 82px;
-}
-
-.sl3 {
-    display: flex;
-    justify-content: center;
-    width: 28px;
-    position: absolute;
-    padding: 0px 96px;
-    margin: 0px 100px;
-}
-
-.sl4 {
-    display: flex;
-    justify-content: center;
-    width: 28px;
-    position: absolute;
-    padding: 0px 128px;
-    margin: 0px 120px;
-} */
-
 body {
     scrollbar-width: none;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #000000;
+    background: #000000 url(https://i.pinimg.com/564x/ad/9f/ae/ad9fae4f070eba77ce5566d73b39832a.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    pointer-events: none;
 }
 
 #container {
@@ -105,12 +30,12 @@ body {
     max-width: 380px;
     height: 620px;
     margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .profile {
     width: 80px;
-    margin: 58px 46px 0;
+    margin: 68px 60px 0;
 }
 
 .name {
@@ -122,42 +47,75 @@ body {
 
 .insta {
     color: #ffffff;
-    margin: 6px auto;
+    margin: 3px auto;
     font-size: 12px;
     text-align: center;
 }
 
 ul {
-    margin: 24px auto;
-    border: 2px solid #ffffff;
+    margin: 24px 0px 4px 0px;
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 200px;
     height: 40px;
     padding: 0;
     list-style: none;
+
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid #FFFFFF;
+    transition: background 0.2s;
 }
 
-ul a {
-    color: #ff0000;
+ul:hover {
+    background: #ffffff5d;
+    border: 2px solid #ff000061;
+}
+
+a {
+    color: #ffffff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
 }
 
 .sl1, .sl2, .sl3, .sl4 {
     display: flex;
     justify-content: center;
-    width: 28px;
-    padding: 0;
+    width: 26px;
+    padding: 5px;
     justify-content: space-around;
     flex-direction: row;
-     /* Ajuste o valor conforme necessário */
+    position: absolute;
+    margin: 8px 22px;
+
+    transition: background 0.3s;
+    border-radius: 50%;
+    background: rgb(37, 37, 37);
 }
+
+.sl2 {
+    margin: 8px 64px;
+}
+
+.sl3 {
+    margin: 8px 106px;
+}
+
+.sl4 {
+    margin: 8px 146px;
+}
+        .sl1:hover, .sl2:hover, .sl3:hover, .sl4:hover {
+            background: rgba(255, 255, 255, 0.304);
+        }
 
 /* Media queries para responsividade */
 @media (max-width: 480px) {
     .profile {
-        margin-top: 20px;
+        margin-top: 68px;
     }
 
     .name {
