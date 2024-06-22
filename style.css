@@ -151,4 +151,20 @@ footer {
     ul a {
         margin: 0;
     }
+
+    .sl1 {
+        margin: 2px 22px;
+    }
+
+    .sl2 {
+        margin: 2px 71px;
+    }
+
+    .sl3 {
+        margin: 2px 119px;
+    }
+
+    .sl4 {
+        margin: 2px 166px;
+    }
 }
